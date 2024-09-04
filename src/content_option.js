@@ -203,7 +203,7 @@ const contactConfig = {
 const socialprofils = {
     github: "https://github.com/SunnyDerwish",
     linkedin: "https://www.linkedin.com/in/david-feghali-444087256/",
-    twitter: "https://twitter.com",
+    //twitter: "https://twitter.com",
 };
 export {
     meta,
