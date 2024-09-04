@@ -7,7 +7,7 @@ import {
 import withRouter from "../hooks/withRouter";
 import AppRoutes from "./routes";
 import Headermain from "../header";
-import AnimatedCursor from "../hooks/AnimatedCursor";
+import AnimatedCursor  from "../hooks/AnimatedCursor";
 import "./App.css";
 
 function _ScrollToTop(props) {
@@ -23,7 +23,7 @@ export default function App() {
   const handleNavClick = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
