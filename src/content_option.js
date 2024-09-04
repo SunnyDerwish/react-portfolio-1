@@ -13,7 +13,7 @@ const introdata = {
         third: "Creative",
     },
     description: "Fill in",
-    your_img_url: "https://static.tvtropes.org/pmwiki/pub/images/52b8dd8a_eff2_4ed2_9b8d_7c0039df1c53.jpg",
+    your_img_url: "https://i.ebayimg.com/images/g/KngAAOSwestkFine/s-l1200.jpg",
 };
 
 const dataabout = {
