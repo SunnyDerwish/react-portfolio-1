@@ -20,6 +20,13 @@ function _ScrollToTop(props) {
 const ScrollToTop = withRouter(_ScrollToTop);
 
 export default function App() {
+  const handleNavClick = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="cursor__dot">
@@ -33,7 +40,7 @@ export default function App() {
         />
       </div>
       <ScrollToTop>
-        <Headermain />
+        <Headermain onNavClick={handleNavClick} />
         <AppRoutes />
       </ScrollToTop>
     </Router>
