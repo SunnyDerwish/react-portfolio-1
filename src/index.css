@@ -9,13 +9,13 @@
 }
 
 [data-theme="light"] {
-    --bg-color: #39e7e7;
-    --primary-color: #39e7e7;
-    --secondary-color: #000;
-    --text-color: #000;
-    --text-color-2: #000;
-    --text-color-3: rgb(55, 124, 226);
-    --overlay-color: rgb(255 255 255 / 70%);
+    --bg-color: #f4f4f4; /* Light grey to resemble paper background */
+    --primary-color: #d1cfcf; /* Soft, light beige for primary accents */
+    --secondary-color: #6c6c6c; /* Dark grey for secondary elements */
+    --text-color: #333; /* Dark grey for text for good readability */
+    --text-color-2: #555; /* Medium grey for secondary text */
+    --text-color-3: #8b8b8b; /* Light greyish tone for additional text */
+    --overlay-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white for overlays */
 }
 
 html,
