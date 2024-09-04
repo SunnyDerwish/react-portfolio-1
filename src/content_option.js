@@ -1,4 +1,7 @@
-//Fill in later
+import imgA from "./assets/images/imgA.jpg";
+import imgB from "./assets/images/imgB.jpg";
+import imgC from "./assets/images/imgC.jpg";
+
 const logotext = "David";
 const meta = {
     title: "David Al-Feghali",
@@ -169,17 +172,17 @@ const services = [{
 ];
 
 const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
+        img: imgA,
         description: "A mock recreation of the Apple store page",
         link: "https://apple-site-two.vercel.app/",
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
+        img: imgB,
         description: "Figma Clone I made",
         link: "https://figma-clone-main-nyxh.vercel.app/",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
+        img: imgC,
         description: "An anime library I made",
         link: "https://anime-vault-main-phi.vercel.app/",
     },
