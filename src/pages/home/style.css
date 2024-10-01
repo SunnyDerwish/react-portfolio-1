@@ -183,7 +183,6 @@ section {
     width: 250px;
     height: 220px;
     border-radius: 100%;
-    /* mix-blend-mode: multiply; */
     background-color: #2f514e;
     z-index: 9999999999;
     display: flex;
@@ -231,4 +230,21 @@ section {
 
 .intro_sec .h_bg-image {
     filter: saturate(0.5);
+}
+
+/* Responsive button padding */
+@media (max-width: 991.98px) {
+    /* Add space between buttons */
+    .intro_btn-action {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Space between the buttons */
+    }
+    
+    .ac_btn {
+        width: 100%; /* Ensures the buttons take up full width */
+        margin-bottom: 10px; /* Add some margin below each button */
+        padding: 12px 20px; /* Add padding inside buttons */
+    }
 }
