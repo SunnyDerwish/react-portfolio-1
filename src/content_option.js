@@ -1,6 +1,9 @@
 import imgA from "./assets/images/imgA.jpg";
 import imgB from "./assets/images/imgB.jpg";
 import imgC from "./assets/images/imgC.jpg";
+import imgD from "./assets/images/imgD.jpg";
+import imgE from "./assets/images/imgE.jpg";
+import imgF from "./assets/images/imgF.jpg";
 
 const logotext = "David";
 const meta = {
@@ -171,7 +174,24 @@ const services = [{
 
 ];
 
-const dataportfolio = [{
+const dataportfolio = [
+    {
+        img: imgD,
+        description: "An AI image generating service I helped develop the front end for",
+        link: "tkhaial.com",
+    },
+    {
+        img: imgE,
+        description: "A file hosting service that I helped develop the front end for",
+        link: "kabir.host",
+
+    },
+    {
+        img: imgF,
+        description: "An AI powered pharmaceutical tool I helped develop the front end for",
+        link: "mdose.ai",
+    },
+    {
         img: imgA,
         description: "A mock recreation of the Apple store page",
         link: "https://apple-site-two.vercel.app/",
@@ -186,6 +206,7 @@ const dataportfolio = [{
         description: "An anime library I made",
         link: "https://anime-vault-main-phi.vercel.app/",
     },
+
 
 ];
 
