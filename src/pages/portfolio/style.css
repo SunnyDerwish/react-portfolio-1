@@ -18,17 +18,27 @@
     border: 1px solid var(--secondary-color);
     transition: 0.3s ease;
     font-size: 0;
-    min-height: 300px;
+    min-height: 250px; /* Reduced height for vertical scaling */
 }
 
 .po_item img {
     max-width: 100%;
+    height: 150px; /* Adjust image height for vertical scaling */
+    object-fit: cover; /* Ensures the image fits nicely within the reduced space */
+}
+
+.portfolio-title {
+    background-color: var(--bg-color); /* Title uses bg-color */
+    color: var(--text-color); /* Text color for readability */
+    padding: 8px 0; /* Padding around the title */
+    margin-top: 8px; /* Adds space between the image and the title */
+    font-size: 16px; /* Title font size */
+    width: 100%; /* Ensure title takes full width */
+    text-align: center; /* Center the title text */
 }
 
 .po_item .content {
     position: absolute;
-    height: 0;
-    width: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -45,26 +55,14 @@
     border: 1px solid black;
 }
 
-.po_item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
-    font-size: 20px;
-}
-
 .po_item:hover {
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
 }
 
 .po_item:hover .content {
-    height: calc(100% - 30px);
-    width: calc(100% - 30px);
+    height: calc(100% - 20px); /* Adjusted height for hover content */
+    width: calc(100% - 20px); /* Adjusted width for hover content */
     opacity: 1;
-}
-
-.po_item:hover .content {
-    opacity: 1;
-    color: var(--secondary-color);
 }
 
 .po_item .content a {
@@ -77,4 +75,16 @@
 
 .po_item .content a:hover {
     text-decoration: none;
+}
+
+.po_item .content {
+    opacity: 0;
+    transition-delay: 1s;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+.po_item:hover .content {
+    opacity: 1;
+    color: var(--secondary-color);
 }

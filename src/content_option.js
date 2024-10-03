@@ -177,39 +177,41 @@ const services = [{
 const dataportfolio = [
     {
         img: imgD,
+        title: "AI Image Generator",
         description: "An AI image generating service I helped develop the front end for",
         link: "tkhaial.com",
     },
     {
         img: imgE,
+        title: "File Hosting Service",
         description: "A file hosting service that I helped develop the front end for",
         link: "kabir.host",
-
     },
     {
         img: imgF,
+        title: "Pharmaceutical AI Tool",
         description: "An AI powered pharmaceutical tool I helped develop the front end for",
         link: "mdose.ai",
     },
     {
         img: imgA,
+        title: "Apple Store Page",
         description: "A mock recreation of the Apple store page",
         link: "https://apple-site-two.vercel.app/",
     },
     {
         img: imgB,
+        title: "Figma Clone",
         description: "Figma Clone I made",
         link: "https://figma-clone-main-nyxh.vercel.app/",
     },
     {
         img: imgC,
+        title: "Anime Library",
         description: "An anime library I made",
         link: "https://anime-vault-main-phi.vercel.app/",
     },
-
-
 ];
-
 const contactConfig = {
     YOUR_EMAIL: "dalfeghali@gmail.com",
     
