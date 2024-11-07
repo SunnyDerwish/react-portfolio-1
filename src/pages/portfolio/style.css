@@ -1,90 +1,94 @@
 .po_items_ho {
-    column-width: 15em;
-    -moz-column-width: 15em;
-    -webkit-column-width: 15em;
-    column-gap: 4rem;
-    -moz-column-gap: 4rem;
-    -webkit-column-gap: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
 }
 
 .po_item {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    margin: 0.5rem auto;
     position: relative;
     background: var(--secondary-color);
-    padding: 6px;
-    border: 1px solid var(--secondary-color);
-    transition: 0.3s ease;
-    font-size: 0;
-    min-height: 250px; /* Reduced height for vertical scaling */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    /* Changed transform origin to be from the top center */
+    transform-origin: top center;
+    z-index: 1;
+    /* Added margin to prevent cutoff */
+    margin: 1rem;
+}
+
+.po_item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    z-index: 2;
 }
 
 .po_item img {
-    max-width: 100%;
-    height: 150px; /* Adjust image height for vertical scaling */
-    object-fit: cover; /* Ensures the image fits nicely within the reduced space */
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.3s ease;
 }
 
 .portfolio-title {
-    background-color: var(--bg-color); /* Title uses bg-color */
-    color: var(--text-color); /* Text color for readability */
-    padding: 8px 0; /* Padding around the title */
-    margin-top: 8px; /* Adds space between the image and the title */
-    font-size: 16px; /* Title font size */
-    width: 100%; /* Ensure title takes full width */
-    text-align: center; /* Center the title text */
+    padding: 0.75rem;
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    background: var(--bg-color);
+    transition: all 0.3s ease;
 }
 
 .po_item .content {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--overlay-color);
-    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    transition: 0.3s ease-in-out;
     opacity: 0;
-    border: 1px solid black;
-}
-
-.po_item:hover {
-    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
-}
-
-.po_item:hover .content {
-    height: calc(100% - 20px); /* Adjusted height for hover content */
-    width: calc(100% - 20px); /* Adjusted width for hover content */
-    opacity: 1;
-}
-
-.po_item .content a {
-    background: var(--bg-color);
-    border: solid 1px var(--text-color);
-    padding: 4px 8px;
-    text-align: center;
-    font-size: 1rem;
-}
-
-.po_item .content a:hover {
-    text-decoration: none;
-}
-
-.po_item .content {
-    opacity: 0;
-    transition-delay: 1s;
-    transition: 0.3s ease;
-    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 1.5rem;
 }
 
 .po_item:hover .content {
     opacity: 1;
-    color: var(--secondary-color);
+}
+
+/* Container adjustments to prevent cutoff */
+.About-header {
+    overflow: visible !important;
+    padding: 1rem;
+    /* Added margin to ensure space for scaling */
+    margin: 1rem auto;
+}
+
+/* Add padding to grid container */
+.po_items_ho {
+    padding: 1rem;
+    margin: -1rem; /* Compensate for item margins */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .po_items_ho {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+    
+    .po_item {
+        margin: 0.5rem;
+    }
+    
+    .po_item:hover {
+        transform: scale(1.05);
+    }
 }
