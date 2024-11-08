@@ -211,9 +211,10 @@ const dataportfolio = [
         description: "An anime library I made",
         link: "https://anime-vault-main-phi.vercel.app/",
     },
+
 ];
 const contactConfig = {
-    YOUR_EMAIL: "dalfeghali@gmail.com",
+    YOUR_EMAIL: "hello@davidfegha.li",
     
     description: "Feel free to contact me! ",
     // creat an emailjs.com account 
