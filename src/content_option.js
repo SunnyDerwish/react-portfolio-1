@@ -60,111 +60,145 @@ const worktimeline = [
 ];
 
 const skills = [
+    // Core Languages
     {
-        name: "3D Modeling",
+        name: "TypeScript",
         value: 90,
     },
     {
-        name: "React",
-        value: 85,
+        name: "JavaScript",
+        value: 95,
     },
     {
-        name: "Unity",
-        value: 80,
+        name: "Rust",
+        value: 70,  // Added - showing active learning
+    },
+    {
+        name: "C++",
+        value: 65,  // Added - showing active learning
+    },
+    {
+        name: "C#",
+        value: 85,  // Strong from Unity background
+    },
+    {
+        name: "PHP",
+        value: 75,  // Added back with Laravel context
+    },
+    
+    // Frontend Frameworks & Libraries
+    {
+        name: "React",
+        value: 90,
     },
     {
         name: "Next.js",
-        value: 60,
+        value: 85,
+    },
+    {
+        name: "Redux",
+        value: 80,
     },
     {
         name: "Tailwind CSS",
+        value: 90,
+    },
+    
+    // Backend Frameworks
+    {
+        name: "Laravel",
+        value: 75,  // Added back
+    },
+    {
+        name: "Node.js",
+        value: 80,
+    },
+    {
+        name: "Express.js",
+        value: 80,
+    },
+
+    // Game Development & Graphics
+    {
+        name: "Unity",
         value: 85,
     },
     {
         name: "ThreeJS",
-        value: 80, // Add value as needed
+        value: 80,
     },
     {
-        name: "Laravel",
-        value: 75, // Add value as needed
+        name: "WebGL",
+        value: 75,
     },
     {
-        name: "JavaScript",
-        value: 90, // Add value as needed
+        name: "Unreal Engine",
+        value: 60,  // Added as relevant to C++
     },
-    {
-        name: "TypeScript",
-        value: 70, // Add value as needed
-    },
-    {
-        name: "HTML",
-        value: 90, // Add value as needed
-    },
-    {
-        name: "CSS",
-        value: 85, // Add value as needed
-    },
-    {
-        name: "PHP",
-        value: 70, // Add value as needed
-    },
-    {
-        name: "Vue.js",
-        value: 65, // Add value as needed
-    },
-    {
-        name: "Bootstrap",
-        value: 70, // Add value as needed
-    },
-    {
-        name: "Node.js",
-        value: 75, // Add value as needed
-    },
-    {
-        name: "Express.js",
-        value: 70, // Add value as needed
-    },
+
+    // APIs & Data
     {
         name: "RESTful APIs",
-        value: 80, // Add value as needed
+        value: 85,
     },
     {
-        name: "SQL",
-        value: 75, // Add value as needed
+        name: "GraphQL",
+        value: 75,
     },
     {
         name: "MongoDB",
-        value: 70, // Add value as needed
+        value: 80,
     },
+    {
+        name: "PostgreSQL",
+        value: 75,
+    },
+
+    // DevOps & Deployment
     {
         name: "Git",
-        value: 85, // Add value as needed
-    },
-    {
-        name: "GitHub",
-        value: 85, // Add value as needed
+        value: 90,
     },
     {
         name: "Docker",
-        value: 70, // Add value as needed
+        value: 75,
     },
     {
         name: "AWS",
-        value: 65, // Add value as needed
-    },
-    {
-        name: "Netlify",
-        value: 70, // Add value as needed
+        value: 70,
     },
     {
         name: "Vercel",
-        value: 70, // Add value as needed
+        value: 85,
+    },
+
+    // Testing
+    {
+        name: "Jest",
+        value: 80,
     },
     {
-        name: "C#",
-        value: 75, // Add value as needed
+        name: "PHPUnit",
+        value: 70,  // Added for Laravel context
     },
-    
+    {
+        name: "React Testing Library",
+        value: 75,
+    },
+
+    // Systems & Performance
+    {
+        name: "Memory Management",
+        value: 65,  // Added for Rust/C++ context
+    },
+    {
+        name: "Concurrent Programming",
+        value: 70,  // Added for Rust context
+    },
+    {
+        name: "Web Performance",
+        value: 80,
+    }
 ];
 
 const services = [{
