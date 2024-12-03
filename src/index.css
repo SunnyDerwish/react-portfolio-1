@@ -1,11 +1,11 @@
 :root {
-    --bg-color: #fecaca;
-    --primary-color: #fecaca;
-    --secondary-color: #6d3636;
-    --text-color: #6d3636;
-    --text-color-2: #6d3636;
-    --text-color-3: rgb(204, 65, 65);
-    --overlay-color: rgba(214, 148, 148, 0.63);
+    --bg-color: #fdf4e7;         /* Soft cream background */
+    --primary-color: #ffd166;    /* Sunny yellow */
+    --secondary-color: #ff6b6b;  /* Coral pink */
+    --text-color: #2c3e50;      /* Deep blue-gray for readable text */
+    --text-color-2: #ff9f1c;    /* Warm orange */
+    --text-color-3: #06d6a0;    /* Fresh mint green */
+    --overlay-color: rgba(255, 209, 102, 0.63); /* Semi-transparent yellow */
 }
 
 [data-theme="light"] {
