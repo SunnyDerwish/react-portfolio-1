@@ -1,9 +1,9 @@
 :root {
     --bg-color: #fdf4e7;         /* Soft cream background */
-    --primary-color: #ffd166;    /* Sunny yellow */
+    --primary-color: #06d6a0;    /* Sunny yellow */
     --secondary-color: #ff6b6b;  /* Coral pink */
     --text-color: #2c3e50;      /* Deep blue-gray for readable text */
-    --text-color-2: #ff9f1c;    /* Warm orange */
+    --text-color-2: #ff6b6b;    /* Warm orange */
     --text-color-3: #06d6a0;    /* Fresh mint green */
     --overlay-color: rgba(255, 209, 102, 0.63); /* Semi-transparent yellow */
 }

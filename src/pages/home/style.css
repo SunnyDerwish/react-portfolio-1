@@ -232,6 +232,10 @@ section {
     filter: saturate(0.5);
 }
 
+.ascii-scene canvas {
+    pointer-events: all;
+  }
+
 /* Responsive button padding */
 @media (max-width: 991.98px) {
     /* Add space between buttons */
